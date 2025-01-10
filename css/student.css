@@ -1,0 +1,10 @@
+.dashoard__main{
+    display: grid;
+    
+}
+.panel{
+    background-color: lightblue;
+    display:inline-block;
+    padding: 1em;
+    border-radius: 0.5em;
+}
