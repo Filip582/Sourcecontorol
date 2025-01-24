@@ -1,4 +1,4 @@
-@layer reset, init, layout, components, design;
+@layer reset, init, components, design, layout;
 
 @import url(normalize.css) layer(reset);
 @import url(typography.css) layer(init);

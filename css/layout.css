@@ -1,4 +1,29 @@
 
-@media screen and (max-width: 480px) {
-    grid
+@media screen and (min-width: 480px) {
+    .dashboard__main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-flow: dense;
+    }
+
+    .panel--big{
+        grid-column: span 2;
+    }
+}
+
+@media screen and (min-width: 670px){
+
+    .dashboard__header{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .hamburger-nav{
+        display: flex;
+        position: static;
+    }
+    
+
+    .panel--big{
+        grid-column: span 3;
+    }
 }

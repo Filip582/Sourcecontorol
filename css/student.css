@@ -2,8 +2,9 @@
 
 .dashboard__main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: ;
     gap: 0.5em;
+    grid-area: "main";
 }
 .panel{
     background-color: lightblue;
@@ -24,7 +25,13 @@
     background-color: var(--primary);
     align-items: center;
     padding: 0.5em;
-    
+    gap: 1em;
+    position: relative;
+    grid-area: "header";
+}
+.header__date{
+    flex-grow: 1;
+    text-align: right;
 }
 .menu__content{
     display: none;
@@ -39,10 +46,38 @@
 }
 .dashboard__nav{
     background-color: var(--primary);
-    
+    grid-area: "nav";
+}
+.dashboard__link{
+    position: relative;
 }
 .notification{
+    position: absolute;
     background-color: red;
     border-radius: 50%;
     padding: 1px;
+    height: 13px;
+    width: 13px;
+    right: 0;
+    top: 0;
 }
+
+.hamburger-btn {
+    z-index: 2;
+}
+
+.hamburger-nav{
+    position: absolute;
+    background-color: var(--primary);
+    right: 0;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+
+
+
